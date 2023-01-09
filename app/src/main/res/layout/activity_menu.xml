@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dimens_100dp"
+            android:layout_height="@dimen/dimens_100dp"
+            android:src="@drawable/background_radius" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="bold"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/text_12sp"
+            android:text="BANCO SOL"
+            android:textSize="@dimen/text_24sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            style="bold"
+            android:gravity="center"
+            android:text="O banco de todos nós"
+            android:textSize="@dimen/text_10sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dimens_12dp"
+        android:background="@color/input_text"
+        android:layout_height="1.5dp"/>
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Menu"
+                android:textColor="@color/black"
+                android:fontFamily="@font/fontspring_neuesingular_medium"
+                android:layout_marginTop="@dimen/dimens_12dp"
+                android:layout_marginStart="24dp"
+                android:textSize="@dimen/text_20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:id="@+id/pay"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimens_12dp"
+                android:layout_marginStart="@dimen/dimens_12dp"
+                android:layout_marginEnd="@dimen/dimens_12dp"
+                android:gravity="center"
+                android:elevation="2dp"
+                android:padding="5dp"
+                android:background="@drawable/input_text"
+                android:layout_height="@dimen/dimens_60dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:background="@drawable/background_radius"
+                    android:layout_marginStart="@dimen/dimens_10dp"
+                    android:padding="12dp"
+                    app:srcCompat="@drawable/ic_baseline_qr_code_scanner"
+                    android:layout_width="@dimen/dimens_45dp"
+                    android:layout_height="@dimen/dimens_45dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dimens_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontspring_neuesingular_light"
+                        android:textStyle="bold"
+                        android:text="@string/pay"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimens_12dp"
+                android:layout_marginStart="@dimen/dimens_12dp"
+                android:layout_marginEnd="@dimen/dimens_12dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:elevation="2dp"
+                android:background="@drawable/input_text"
+                android:layout_height="@dimen/dimens_60dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:background="@drawable/background_radius"
+                    android:padding="12dp"
+                    android:layout_marginStart="@dimen/dimens_10dp"
+                    app:srcCompat="@drawable/ic_baseline_info"
+                    android:layout_width="@dimen/dimens_45dp"
+                    android:layout_height="@dimen/dimens_45dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dimens_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontspring_neuesingular_light"
+                        android:textStyle="bold"
+                        android:text="@string/search"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fecho_cobrador"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dimens_12dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:elevation="2dp"
+                android:background="@drawable/input_text"
+                android:layout_height="@dimen/dimens_60dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:background="@drawable/background_radius"
+                    android:layout_marginStart="@dimen/dimens_10dp"
+                    android:padding="12dp"
+                    app:srcCompat="@drawable/ic_baseline_exit_to_app"
+                    android:layout_width="@dimen/dimens_45dp"
+                    android:layout_height="@dimen/dimens_45dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dimens_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fontspring_neuesingular_light"
+                        android:textStyle="bold"
+                        android:text="@string/setting"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</LinearLayout>

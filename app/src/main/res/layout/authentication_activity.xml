@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/input_text">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimens_100dp"
+                android:layout_height="@dimen/dimens_100dp"
+                android:src="@drawable/background_radius" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                style="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/text_12sp"
+                android:text="BANCO SOL"
+                android:textSize="@dimen/text_24sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                style="bold"
+                android:gravity="center"
+                android:text="O banco de todos nós"
+                android:textSize="@dimen/text_10sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimens_10dp"
+            android:background="@drawable/input_layout"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/texview_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fontspring_neuesingular_light"
+                android:text="@string/usuario"
+                android:textSize="@dimen/text_18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_user"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_50dp"
+                    android:background="@drawable/input_text"
+                    android:hint="Digite o seu nome"
+                    android:inputType="textPersonName" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimens_50dp"
+                    android:layout_height="@dimen/dimens_50dp"
+                    android:layout_alignEnd="@+id/input_user"
+                    android:background="@drawable/brackgroud_input"
+                    android:padding="@dimen/text_12sp"
+                    app:srcCompat="@drawable/ic_baseline_account_box" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/texview_senha"
+                visible="@{!viewModel.cardSaved}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/fontspring_neuesingular_light"
+                android:text="@string/senha_user"
+                android:textSize="@dimen/text_18sp"
+                app:layout_constraintTop_toBottomOf="@+id/front_side"
+                tools:ignore="MissingConstraints" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_password"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_50dp"
+                    android:background="@drawable/input_text"
+                    android:hint="@string/coloque_sua_senha"
+                    android:inputType="textPersonName" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimens_50dp"
+                    android:layout_height="@dimen/dimens_50dp"
+                    android:layout_alignEnd="@+id/input_password"
+                    android:background="@drawable/brackgroud_input"
+                    android:padding="@dimen/text_12sp"
+                    app:srcCompat="@drawable/ic_baseline_lock" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/texview_local"
+                visible="@{!viewModel.cardSaved}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="@dimen/dimens_10dp"
+                android:fontFamily="@font/fontspring_neuesingular_light"
+                android:text="@string/local_user"
+                android:textSize="@dimen/text_16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_5dp">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/local_operation"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimens_50dp"
+                    android:background="@drawable/input_text"
+                    android:hint="Selecione o seu local"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimens_50dp"
+                    android:layout_height="@dimen/dimens_50dp"
+                    android:layout_alignEnd="@+id/local_operation"
+                    android:background="@drawable/brackgroud_input"
+                    android:padding="@dimen/text_12sp"
+                    app:srcCompat="@drawable/ic_baseline_location_on" />
+
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_btn"
+                android:layout_width="180dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="@dimen/dimens_10dp"
+                android:background="@drawable/button_selector"
+                android:elevation="6dp"
+                android:text="Submeter"
+                android:textColor="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+
+</ScrollView>

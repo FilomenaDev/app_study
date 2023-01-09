@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="start|center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrow_title"
+            android:layout_width="@dimen/dimens_35dp"
+            android:layout_height="@dimen/dimens_30dp"
+            android:layout_marginStart="@dimen/dimens_12dp"
+            android:background="@drawable/input_text"
+            app:srcCompat="@drawable/ic_baseline_arrow_back" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_saldo"
+            android:text="0,00 AKZ"
+            android:layout_marginEnd="@dimen/dimens_20dp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nome_user"
+            android:text="Agente Banco Sol"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimens_20dp"
+            android:layout_below="@id/text_saldo"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fontspring_neuesingular_medium"
+            android:layout_marginTop="@dimen/dimens_20dp"
+            android:textSize="@dimen/text_18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:background="@color/input_text"
+        android:layout_height="1.5dp"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</LinearLayout>

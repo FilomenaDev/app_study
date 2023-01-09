@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">APPBUAP</string>
+    <string name="title_activity_screen_splash">Screen_Splash</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="tab_text_1">Multicaixa</string>
+    <string name="tab_text_2">Dinheiro</string>
+    <string name="help">Help</string>
+    <string name="search">Movimentos</string>
+    <string name="pay">Pagamento</string>
+    <string name="rupe">Rupe *</string>
+    <string name="setting">Fecho</string>
+    <string name="print">Print</string>
+    <string name="reprint"> Consulta \n Movimentos</string>
+    <string name="elecsign">E-signature</string>
+    <string name="press_key">Press key</string>
+    <string name="scanner">Scan the code</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="uswipe">Ler QRCode</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="demo">test Demo</string>
+    <string name="wifi">WIFI</string>
+    <string name="gps">GPS</string>
+    <string name="inventory">Inventory</string>
+    <string name="update">System update</string>
+    <string name="please_choose_pay_ways">Please choose payment methods</string>
+    - <!--
+Payment method支付方式
+  -->
+    <string name="cardpay">Pay by Bank Card </string>
+    <string name="scanning">Scan</string>
+    <string name="applepay">Apple Pay</string>
+    <string name="samsungpay">SamSung Pay</string>
+    <string name="qr_code">QR Code</string>
+    <string name="scan_gun">Barcode Scanner</string>
+    <string name="function_adding">functions </string>
+
+    - <!--
+Input Amount输入金额按钮文字
+  -->
+    <string name="cancel">Cancelar</string>
+    <string name="clear">Clear</string>
+    <string name="confirm">Confirm</string>
+    <string name="please_input_trade_amount">Please Input Amount</string>
+    <string name="please_swipe_insert_otehr">Please insert or swipe or tap your card </string>
+    <string name="readcard_timeout">Timeout</string>
+    <string name="readcard_error">Error, please retry</string>
+    <string name="tk2isnull">tk2 is null</string>
+    <string name="confirm_cardnum">Confirm card No.</string>
+    <!--<string name="xgd_safe_pinpad">NEXGO safe pinpad</string>-->
+    <string name="xgd_safe_pinpad">PIN</string>
+
+    <string name="please_input_password">Please input password</string>
+    <string name="please_input_ref">Please input reference</string>
+    <string name="no_pin_input">No pin</string>
+    <string name="carholder_sign">Cardholder signature</string>
+    <string name="sign_zone">Signature Zone</string>
+    <string name="sign_ok">OK</string>
+    <string name="sign_repeat">Re-sign </string>
+    <string name="printing">Printing</string>
+    <string name="lack_paper">Lack of paper,please put paper roll and press enter </string>
+    <string name="print_sucess">Printing succeed</string>
+    <string name="hotline_24">24h HOTLINE</string>
+    <string name="hotline_num">400-609-6969</string>
+    <string name="wechat_public">Wechat ID</string>
+    <string name="opguide">Guide</string>
+    <string name="scan_qrcode_or_more">Scan 1D/2D barcode</string>
+    <string name="please_choose_scann_way">Please choose scanning method</string>
+    <string name="inner_scangun">Barcode scanner</string>
+    <string name="device_not_support_now">not support</string>
+    <string name="wechat_num">Wechat ID:xinguodu_300130</string>
+    <string name="print_shopping">Receipt printing</string>
+    <string name="elec_sign">E-Signature</string>
+    <string name="locating">Locating</string>
+    <string name="location_sucess">Location succeed</string>
+    <string name="location_fail">Location failed</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="address">Address</string>
+    <string name="no_supply_now">not available now</string>
+    <string name="blooth_devices_list">device matching</string>
+    <string name="please_install_relelative_app">Please install the app</string>
+    <string name="scan_text">Scan the QR code</string>
+    <string name="qr_code_bar_code">1D/2D barcode</string>
+    <string name="scan_result">Scanning result</string>
+    <string name="deal_cancel">Transaction cancelled</string>
+    <string name="no_network">No network</string>
+    <string name="please_select_camera">select camera</string>
+    <string name="front_camera">front camera</string>
+    <string name="back_camera">back camera</string>
+    <string name="no_device">not available now</string>
+    <!--打印部分-->
+    <string name="mer_name">MERCHANT NAME:</string>
+    <string name="mer_ID">MERCHANT NO.:</string>
+    <string name="tid">TERMINAL NO.:</string>
+    <string name="card_no">Nº Cartao .:</string>
+    <string name="tran_type">TRAN TYPE:</string>
+    <string name="sale">SALE</string>
+    <string name="batch_no">BATCH NO.:</string>
+    <string name="auth_no">AUTH NO.:</string>
+    <string name="ref_no">REFER NO.:</string>
+    <string name="date_time">DATE/TIME:</string>
+    <string name="amount">AMOUNT:</string>
+    <string name="reference">REFERENCE:</string>
+    <string name="nif">NIF</string>
+    <string name="cardholder_signature">CARDHOLDER SIGNATURE:</string>
+
+    <string name="transaction_sucess">Transaction Approve</string>
+    <string name="transaction_detail">Transaction Detail</string>
+    <string name="transaction_detail_title">NEXGO</string>
+    <string name="transaction_detail_oder_no">ORDER NO.:</string>
+    <string name="print_not_support">Print Not Support</string>
+    <string name="DC">DC</string>
+    <string name="sending">Sending</string>
+    <string name="communicating">Communicating</string>
+    <string name="bank">bank:</string>
+    <string name="successPayment">Successful payment</string>
+    <string name="ativa">Ativar Cartao</string>
+    <string name="vendedor">Vendedor</string>
+    <string name="nome">Nome \t \t \t  .:</string>
+    <string name="insira_o_cart_o">Insira o cartão</string>
+
+    <string name="card_number_placeholder">********</string>
+    <string name="card_valor_saldo">0.0 AKZ</string>
+    <string name="card_holder">Titular</string>
+    <string name="expiry">Expira em:</string>
+    <string name="hint_card_holder_name">Nome completo</string>
+    <string name="hint_card_number">Nif</string>
+    <string name="hint_expiry_date">Expiry date</string>
+    <string name="hint_cvv">CVV</string>
+    <string name="card_expired">This card is expired</string>
+    <string name="card_exp_date_error">Format exception</string>
+    <string name="save_card">Submeter</string>
+    <string name="card_saved">Sucesso</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="senha_user">Senha</string>
+    <string name="local_user">Local</string>
+    <string name="usuario">Nome</string>
+    <string name="entrar">Entrar</string>
+    <string name="transfer_ncias">Transferências</string>
+    <string name="pagamento_rupe">Sair</string>
+    <string name="solicitar_rupe">Fecho Rupe</string>
+    <string name="rejeitar">Rejeitar</string>
+    <string name="valor">Valor *</string>
+    <string name="sistema_de_pagamento_ao_estado">Sistema Pagamento ao Estado</string>
+    <string name="saldo">Saldo</string>
+    <string name="cobrador">Cobrador</string>
+    <string name="antiga">Antiga</string>
+    <string name="confirma">Confirmar</string>
+    <string name="nova_senha">Nova</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+
+    <string name="coloque_sua_senha">Coloque sua senha</string>
+    <string name="ordem_pagamento">Ordem pagamento *</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="valor_pago">Digite o valor pago</string>
+</resources>
